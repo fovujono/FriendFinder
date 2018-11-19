@@ -12,7 +12,7 @@ app.use(express.json());
 
 
 //refer to routes in routing folder
-require("./app/routing/apiRoutes")(app);
+require("./app/routing/apiRoutes.js")(app);
 require("./app/routing/htmlRoutes")(app);
 
 
