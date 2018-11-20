@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/smoothtacoman/FriendFinder/issues"
   },
-  "homepage": "https://github.com/smoothtacoman/FriendFinder#readme"
+  "homepage": "https://github.com/smoothtacoman/FriendFinder#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }
