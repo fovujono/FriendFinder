@@ -194,17 +194,17 @@
     }
     //if user has completed quiz run this
     if (valid === true){
-        var friendData = {
+        var userData = {
             name: name,
             photo: photo,
             scores: scores
         }
     }
-    console.log(friendData);
-    $.post("/api/friends", friendData, function(data){
+    console.log(userData);
+    $.post("/api/friends", userData, function(data){
         console.log(data)
         $("#modal-title-placement").html("Your new friends is " + data.name + " !")
-        $("#photo-link").attr("src", data.photo);
+        $("#photo").attr("src", data.photo);
     });
 
     });
