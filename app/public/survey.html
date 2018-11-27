@@ -154,8 +154,10 @@
                 <div class="modal-body">
                     <img src="" id="friend-pic" height=50% width=50%>
                 </div>
+        
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
 
                 </div>
             </div>
@@ -204,7 +206,7 @@
     $.post("/api/friends", userData, function(data){
         console.log(data)
         $("#modal-title-placement").html("Your new friends is " + data.name + " !")
-        $("#photo").attr("src", data.photo);
+        $("#friend-pic").attr("src", data.photo);
     });
 
     });
