@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Survey</title>
-          <!-- Latest compiled and minified CSS & JS -->
-<link rel = "stylesheet" href ="../styling/style.css">
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified CSS & JS -->
+    <!-- <link rel="stylesheet" href="../styling/style.css"> -->
+-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 
 </head>
+
 <body>
     <h1>Survey Questions</h1>
     <hr>
@@ -25,7 +28,7 @@
     <h2>Question 1</h2>
     <h3>Your mind is always buzzing with unexplored ideas and plans.</h3>
     <select class="question" id="question1">
-        <option value="" selected disabled>Select an Option</option>
+        <option value></option>Select an Option</option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -36,7 +39,7 @@
     <h2>Question 2</h2>
     <h3>Generally speaking, you rely more on your experience than your imagination.</h3>
     <select class="question" id="question2">
-        <option value="" selected disabled>Select an Option</option>
+        <option value></option>Select an Option</option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -47,7 +50,7 @@
     <h2>Question 3</h2>
     <h3>You find it easy to stay relaxed and focused even when there is some pressure.</h3>
     <select class="question" id="question3">
-        <option value="" selected disabled>Select an Option</option>
+        <option value></option>Select an Option</option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -58,7 +61,7 @@
     <h2>Question 4</h2>
     <h3>You rarely do something just out of sheer curiosity.</h3>
     <select class="question" id="question4">
-        <option value="" selected disabled>Select an Option</option>
+        <option value></option>Select an Option</option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -69,7 +72,7 @@
     <h2>Question 5</h2>
     <h3>People can rarely upset you.</h3>
     <select class="question" id="question5">
-        <option value="" selected disabled>Select an Option</option>
+        <option value></option>Select an Option</option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -80,7 +83,7 @@
     <h2>Question 6</h2>
     <h3>It is often difficult for you to relate to others poeple's feelings.</h3>
     <select class="question" id="question6">
-        <option value="" selected disabled>Select an Option</option>
+        <option value></option>Select an Option</option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -91,7 +94,7 @@
     <h2>Question 7</h2>
     <h3>In a discussion, truth should be more important than people's feelings.</h3>
     <select class="question" id="question7">
-        <option value="" selected disabled>Select an Option</option>
+        <option value></option>Select an Option</option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -102,7 +105,7 @@
     <h2>Question 8</h2>
     <h3>You rarely get carried away by fantasies and ideas.</h3>
     <select class="question" id="question8">
-        <option value="" selected disabled>Select an Option</option>
+        <option value></option>Select an Option</option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -113,7 +116,7 @@
     <h2>Question 9</h2>
     <h3>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h3>
     <select class="question" id="question9">
-        <option value="" selected disabled>Select an Option</option>
+        <option value></option>Select an Option</option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -124,7 +127,7 @@
     <h2>Question 10</h2>
     <h3>You feel more energetic after spending time with a group of people.</h3>
     <select class="question" id="question10">
-        <option value="" selected disabled>Select an Option</option>
+        <option value></option>Select an Option</option>
         <option value="1">1 (Strongly Disagree)</option>
         <option value="2">2</option>
         <option value="3">3</option>
@@ -132,9 +135,77 @@
         <option value="5">5 (Strongly Agree)</option>
     </select>
 
-<br>
-<br>
-    <button id="submit-btn">Submit</button>
+    <br>
+    <br>
+    <button class="submit" type ="submit" data-toggle="modal" data-target="#myModal">Submit</button>
 
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modal-title-placement">Your New Friend</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="" id="friend-pic" height=50% width=50%>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+   
 </body>
+
 </html>
+
+
+ <!--JAVASCRIPT FOR MODAL-->
+ <script type="text/javascript">
+
+    var questions = $(".question");
+    var name = $("#name").val().trim();
+    var photo = $("#photo-link").val().trim();
+    var scores = [];
+    var valid = true;
+
+    $(".submit").on("click", function (event) {
+        event.preventDefault();
+
+        for (i = 0; i < 10; i++) {
+            scores.push(parseInt(questions[i].value));
+        };
+  
+ 
+
+    //if user needs to fill out more of the quiz run this
+    if ($("#name").val() === "" || $("#photo-link").val() === "") {
+        valid = false;
+    } else if ($(".chosen").val() === "empty") {
+        valid = false;
+        alert("You have some questions left to answer...")
+    }
+    //if user has completed quiz run this
+    if (valid === true){
+        var friendData = {
+            name: name,
+            photo: photo,
+            scores: scores
+        }
+    }
+    console.log(friendData);
+    $.post("/api/friends", friendData, function(data){
+        console.log(data)
+        $("#modal-title-placement").html("Your new friends is " + data.name + " !")
+        $("#photo-link").attr("src", data.photo);
+    });
+
+    });
+</script>

@@ -8,22 +8,35 @@ module.exports = function (app) {
     });
 
     //API POST request to return a matched friend
-    app.post("/api/friends", function (req, res) {
-        var quiz = req.body;
-        var match = 0;
-        var difference = 0;
+    app.post("/api/friends", function(req, res) {
 
+         console.log(req.body)
+
+        var maximum = 50;
+        var match = {};
+        var userData = req.body.scores;
+        // loop through all friends in friends.js
         for (var i = 0; i < friends.length; i++) {
-            total = 0;
-          //finding the diffrence 
-            for (var j = 0; j < friends[i].scores[j]; j++) {
-                difference += Math.abs(parseInt(quiz.scores[j]) - parseInt(friends[i].scores[j]));
+          
+          var difference = 0;
+            // loop through the users scores from the survey.html inputs
+           for (var j = 0; j < userData.length; j++){
+            // get the total differenceerence of the users score and each of the friends scores 
+            //  math.abs for absolute value
+                var total = Math.abs(userData[j]-friends[i].scores[j]);
+                difference += total;
+           }
+
+           if (difference < maximum){
+            maximum = difference;
+            match = friends[i];
             }
-            if (total < difference) {
-                difference = total
-                match = i;
-            }
+
         }
+
         res.json(match);
-    })
-}
+
+      });
+  
+    
+};
