@@ -1,15 +1,10 @@
 
-*{
-    background: url("/app/styling/stonehaven.png");
-};
 
-h1,
-h2,
-h3,
-.question,
-.required,
-#submit-btn {
-    font-display: 'Montserrat', sans-serif;
-    margin-left: 300px;
 
-};
+.jumbo{
+display: flex;
+margin: auto;
+background-color: blue;
+width: 75%;
+
+}
