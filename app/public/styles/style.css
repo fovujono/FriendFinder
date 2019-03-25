@@ -1,14 +1,16 @@
 *{
     margin: 0;
 }
+
+body{
+   min-height: 100vh;
+}
 .wrapper{
     height: 100%;
     width: 100%;
 }
 
-/* body{
-    background: url("../styles/light-grey-terrazzo.png");
-} */
+
 
 .header,.friend-finder,.paragraph,.start-container,.footer{
     display: flex;
@@ -45,6 +47,10 @@
 }
 
 
-.footer{
-  
-}
+.footer {
+    position:fixed;
+    bottom:0;
+    left:0;
+    width: 100%;
+    align-content: center;
+  }
