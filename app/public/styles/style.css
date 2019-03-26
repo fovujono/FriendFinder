@@ -6,20 +6,17 @@
 
 body{
    min-height: 100vh;
+   background: url('../styles/stardust.png')
 }
 .wrapper{
     height: 100%;
     width: 100%;
 }
 
-
-
 .header,.friend-finder,.paragraph,.start-container,.footer{
     display: flex;
     justify-content: center;
 }
-
-
 
 .header{
     align-items: center;
@@ -53,6 +50,7 @@ body{
     padding: 0.35em 1.2em;
     border: 0.1em solid rgb(50, 118, 207);
     margin: 0 0.3em 0.3em 0;
+    margin-top: 50px;
     border-radius: 0.12em;
     box-sizing: border-box;
     text-decoration: none;
@@ -65,9 +63,12 @@ body{
 
 
 .footer {
+    align-items: center;
     position:fixed;
     bottom:0;
     left:0;
+    height: 35px;   
     width: 100%;
-    align-content: center;
+    background-color: rgba(0, 0, 0, 0.267);
   }
+
