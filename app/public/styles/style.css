@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 *{
     margin: 0;
 }
@@ -22,7 +24,7 @@ body{
 .header{
     align-items: center;
     flex-wrap: wrap;
-
+    text-shadow: -1px 0 rgb(255, 255, 255), 0 1px rgb(255, 255, 255), 1px 0 rgb(255, 255, 255), 0 -1px rgb(255, 255, 255);
     margin: 0;
     height: 450px;
     width: 100%;
@@ -44,6 +46,21 @@ body{
     font-size: 20px;
     height: 50px;
     width: 50%;
+}
+
+.start-button{
+    font-family: "Roboto", sans-serif;
+    padding: 0.35em 1.2em;
+    border: 0.1em solid rgb(50, 118, 207);
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: rgb(0, 88, 202);
+    text-align: center;
+    transition: all 0.2s;
 }
 
 
