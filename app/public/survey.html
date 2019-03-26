@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Survey</title>
     <!-- Latest compiled and minified CSS & JS -->
-    <!-- <link rel="stylesheet" href="../styling/style.css"> -->
+    <link rel="stylesheet" href="./styles/styles-two.css">
 
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -17,16 +17,19 @@
 </head>
 
 <body>
+    <div class="wrapper">
     <h1>Survey Questions</h1>
-    <hr>
-    <h2>About You</h2>
-    <h3>Name (Required)</h3>
+    <div class="survey-container">
+        <div class="question-container">
+
+    <p style="padding-top: 40px">About You</p>
+    <p>Name (Required)</p>
     <input type="text" id="name" class="required">
-    <h3>Link to Photo Image (Required)</h3>
+    <p>Link to Photo Image (Required)</p>
     <input type="text" id="photo-link" class="required">
 
-    <h2>Question 1</h2>
-    <h3>Your mind is always buzzing with unexplored ideas and plans.</h3>
+    <p>Question 1</p>
+    <p>Your mind is always buzzing with unexplored ideas and plans.</p>
     <select class="question" id="question1">
         <option value></option>Select an Option</option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -36,8 +39,8 @@
         <option value="5">5 (Strongly Agree)</option>
     </select>
 
-    <h2>Question 2</h2>
-    <h3>Generally speaking, you rely more on your experience than your imagination.</h3>
+    <p>Question 2</p>
+    <p>Generally speaking, you rely more on your experience than your imagination.</p>
     <select class="question" id="question2">
         <option value></option>Select an Option</option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -47,8 +50,8 @@
         <option value="5">5 (Strongly Agree)</option>
     </select>
 
-    <h2>Question 3</h2>
-    <h3>You find it easy to stay relaxed and focused even when there is some pressure.</h3>
+    <p>Question 3</p>
+    <p>You find it easy to stay relaxed and focused even when there is some pressure.</p>
     <select class="question" id="question3">
         <option value></option>Select an Option</option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -58,8 +61,8 @@
         <option value="5">5 (Strongly Agree)</option>
     </select>
 
-    <h2>Question 4</h2>
-    <h3>You rarely do something just out of sheer curiosity.</h3>
+    <p>Question 4</p>
+    <p>You rarely do something just out of sheer curiosity.</p>
     <select class="question" id="question4">
         <option value></option>Select an Option</option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -69,8 +72,8 @@
         <option value="5">5 (Strongly Agree)</option>
     </select>
 
-    <h2>Question 5</h2>
-    <h3>People can rarely upset you.</h3>
+    <p>Question 5</p>
+    <p>People can rarely upset you.</p>
     <select class="question" id="question5">
         <option value></option>Select an Option</option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -80,8 +83,8 @@
         <option value="5">5 (Strongly Agree)</option>
     </select>
 
-    <h2>Question 6</h2>
-    <h3>It is often difficult for you to relate to others poeple's feelings.</h3>
+    <p>Question 6</p>
+    <p>It is often difficult for you to relate to others people's feelings.</p>
     <select class="question" id="question6">
         <option value></option>Select an Option</option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -91,8 +94,8 @@
         <option value="5">5 (Strongly Agree)</option>
     </select>
 
-    <h2>Question 7</h2>
-    <h3>In a discussion, truth should be more important than people's feelings.</h3>
+    <p>Question 7</p>
+    <p>In a discussion, truth should be more important than people's feelings.</p>
     <select class="question" id="question7">
         <option value></option>Select an Option</option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -102,8 +105,8 @@
         <option value="5">5 (Strongly Agree)</option>
     </select>
 
-    <h2>Question 8</h2>
-    <h3>You rarely get carried away by fantasies and ideas.</h3>
+    <p>Question 8</p>
+    <p>You rarely get carried away by fantasies and ideas.</p>
     <select class="question" id="question8">
         <option value></option>Select an Option</option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -113,8 +116,8 @@
         <option value="5">5 (Strongly Agree)</option>
     </select>
 
-    <h2>Question 9</h2>
-    <h3>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h3>
+    <p>Question 9</p>
+    <p>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</p>
     <select class="question" id="question9">
         <option value></option>Select an Option</option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -124,8 +127,8 @@
         <option value="5">5 (Strongly Agree)</option>
     </select>
 
-    <h2>Question 10</h2>
-    <h3>You feel more energetic after spending time with a group of people.</h3>
+    <p>Question 10</p>
+    <p>You feel more energetic after spending time with a group of people.</p>
     <select class="question" id="question10">
         <option value></option>Select an Option</option>
         <option value="1">1 (Strongly Disagree)</option>
@@ -138,6 +141,10 @@
     <br>
     <br>
     <button class="submit" type ="submit" data-toggle="modal" data-target="#myModal">Submit</button>
+
+</div>
+</div>
+
 
 
     <!-- Modal -->
@@ -163,6 +170,7 @@
             </div>
         </div>
     </div>
+</div>
    
 </body>
 
