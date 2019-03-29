@@ -56,6 +56,7 @@ body{
     box-sizing: border-box;
     text-decoration: none;
     font-family: "Roboto", sans-serif;
+    font-size: 18px;
     font-weight: 300;
     color: rgb(0, 88, 202);
     text-align: center;
@@ -81,12 +82,12 @@ body{
 
 .footer a{
     font-weight: bold;
-    color: white;
+    color: rgb(184,210,251);
     text-shadow: -1px 0 rgb(0, 0, 0), 0 1px rgb(0, 0, 0), 1px 0 rgb(0, 0, 0), 0 -1px rgb(0, 0, 0);
     text-decoration: none;
 }
 
 .footer a:hover{
-    color: rgba(166, 200, 252, 0.781);
+    color: white;
 }
 
